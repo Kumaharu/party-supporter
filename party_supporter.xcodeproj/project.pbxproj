@@ -12,6 +12,11 @@
 		ABC58D5C1FCF9B04006908A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC58D5A1FCF9B04006908A3 /* Main.storyboard */; };
 		ABC58D5E1FCF9B04006908A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC58D5D1FCF9B04006908A3 /* Assets.xcassets */; };
 		ABC58D611FCF9B04006908A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC58D5F1FCF9B04006908A3 /* LaunchScreen.storyboard */; };
+		ABC58D6A1FCF9E0F006908A3 /* fu in Resources */ = {isa = PBXBuildFile; fileRef = ABC58D681FCF9E0F006908A3 /* fu */; };
+		ABC58D6B1FCF9E0F006908A3 /* ikki in Resources */ = {isa = PBXBuildFile; fileRef = ABC58D691FCF9E0F006908A3 /* ikki */; };
+		ABC58D6F1FCF9E19006908A3 /* Koo in Resources */ = {isa = PBXBuildFile; fileRef = ABC58D6C1FCF9E19006908A3 /* Koo */; };
+		ABC58D701FCF9E19006908A3 /* RyoMatsumoto in Resources */ = {isa = PBXBuildFile; fileRef = ABC58D6D1FCF9E19006908A3 /* RyoMatsumoto */; };
+		ABC58D711FCF9E19006908A3 /* kumatest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC58D6E1FCF9E19006908A3 /* kumatest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		ABC58D5D1FCF9B04006908A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABC58D601FCF9B04006908A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABC58D621FCF9B04006908A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC58D681FCF9E0F006908A3 /* fu */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fu; sourceTree = "<group>"; };
+		ABC58D691FCF9E0F006908A3 /* ikki */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ikki; sourceTree = "<group>"; };
+		ABC58D6C1FCF9E19006908A3 /* Koo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Koo; sourceTree = "<group>"; };
+		ABC58D6D1FCF9E19006908A3 /* RyoMatsumoto */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RyoMatsumoto; sourceTree = "<group>"; };
+		ABC58D6E1FCF9E19006908A3 /* kumatest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kumatest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,11 @@
 		ABC58D551FCF9B04006908A3 /* party_supporter */ = {
 			isa = PBXGroup;
 			children = (
+				ABC58D6C1FCF9E19006908A3 /* Koo */,
+				ABC58D6E1FCF9E19006908A3 /* kumatest.swift */,
+				ABC58D6D1FCF9E19006908A3 /* RyoMatsumoto */,
+				ABC58D681FCF9E0F006908A3 /* fu */,
+				ABC58D691FCF9E0F006908A3 /* ikki */,
 				ABC58D561FCF9B04006908A3 /* AppDelegate.swift */,
 				ABC58D581FCF9B04006908A3 /* ViewController.swift */,
 				ABC58D5A1FCF9B04006908A3 /* Main.storyboard */,
@@ -123,9 +138,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC58D6F1FCF9E19006908A3 /* Koo in Resources */,
+				ABC58D701FCF9E19006908A3 /* RyoMatsumoto in Resources */,
 				ABC58D611FCF9B04006908A3 /* LaunchScreen.storyboard in Resources */,
+				ABC58D6A1FCF9E0F006908A3 /* fu in Resources */,
 				ABC58D5E1FCF9B04006908A3 /* Assets.xcassets in Resources */,
 				ABC58D5C1FCF9B04006908A3 /* Main.storyboard in Resources */,
+				ABC58D6B1FCF9E0F006908A3 /* ikki in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABC58D591FCF9B04006908A3 /* ViewController.swift in Sources */,
+				ABC58D711FCF9E19006908A3 /* kumatest.swift in Sources */,
 				ABC58D571FCF9B04006908A3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
