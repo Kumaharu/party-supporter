@@ -199,6 +199,7 @@ SWIFT_CLASS("_TtC15party_supporter11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UILabel;
 @class NSBundle;
 @class NSCoder;
 
@@ -206,6 +207,16 @@ SWIFT_CLASS("_TtC15party_supporter14ViewController")
 @interface ViewController : UIViewController
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified numPeople;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified numGirls;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified numHungry;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified numNotHungry;
+- (IBAction)plusButton1:(id _Nonnull)sender;
+- (IBAction)plusButton2:(id _Nonnull)sender;
+- (IBAction)plusButton3:(id _Nonnull)sender;
+- (IBAction)minusButton1:(id _Nonnull)sender;
+- (IBAction)minusButton2:(id _Nonnull)sender;
+- (IBAction)minusButton3:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

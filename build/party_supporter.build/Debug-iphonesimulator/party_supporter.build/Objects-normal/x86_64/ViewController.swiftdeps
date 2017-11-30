@@ -7,8 +7,20 @@ provides-member:
 - ["15party_supporter14ViewControllerC", ""]
 provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
+- "minusButton1"
+- "minusButton2"
+- "minusButton3"
+- "numGirls"
+- "numHungry"
+- "numNotHungry"
+- "numPeople"
+- "plusButton1"
+- "plusButton2"
+- "plusButton3"
 - "viewDidLoad"
 depends-top-level:
+- "AnyObject"
+- "UILabel"
 - "UIViewController"
 - "ViewController"
 depends-member:
@@ -40,8 +52,20 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", ""]
+- ["So8NSObjectC", "AnyObject"]
+- ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "didReceiveMemoryWarning"]
 - ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "minusButton1"]
+- ["So8NSObjectC", "minusButton2"]
+- ["So8NSObjectC", "minusButton3"]
+- ["So8NSObjectC", "numGirls"]
+- ["So8NSObjectC", "numHungry"]
+- ["So8NSObjectC", "numNotHungry"]
+- ["So8NSObjectC", "numPeople"]
+- ["So8NSObjectC", "plusButton1"]
+- ["So8NSObjectC", "plusButton2"]
+- ["So8NSObjectC", "plusButton3"]
 - ["So8NSObjectC", "viewDidLoad"]
 - !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
 - !private ["So16NSObjectProtocolP", "init"]
@@ -63,8 +87,20 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "AnyObject"]
+- ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "didReceiveMemoryWarning"]
 - ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "minusButton1"]
+- ["So11UIResponderC", "minusButton2"]
+- ["So11UIResponderC", "minusButton3"]
+- ["So11UIResponderC", "numGirls"]
+- ["So11UIResponderC", "numHungry"]
+- ["So11UIResponderC", "numNotHungry"]
+- ["So11UIResponderC", "numPeople"]
+- ["So11UIResponderC", "plusButton1"]
+- ["So11UIResponderC", "plusButton2"]
+- ["So11UIResponderC", "plusButton3"]
 - ["So11UIResponderC", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
@@ -78,13 +114,37 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", ""]
+- ["So16UIViewControllerC", "AnyObject"]
+- ["So16UIViewControllerC", "UILabel"]
 - ["So16UIViewControllerC", "didReceiveMemoryWarning"]
 - ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "minusButton1"]
+- ["So16UIViewControllerC", "minusButton2"]
+- ["So16UIViewControllerC", "minusButton3"]
+- ["So16UIViewControllerC", "numGirls"]
+- ["So16UIViewControllerC", "numHungry"]
+- ["So16UIViewControllerC", "numNotHungry"]
+- ["So16UIViewControllerC", "numPeople"]
+- ["So16UIViewControllerC", "plusButton1"]
+- ["So16UIViewControllerC", "plusButton2"]
+- ["So16UIViewControllerC", "plusButton3"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", ""]
+- ["15party_supporter14ViewControllerC", "AnyObject"]
+- ["15party_supporter14ViewControllerC", "UILabel"]
 - ["15party_supporter14ViewControllerC", "deinit"]
 - ["15party_supporter14ViewControllerC", "didReceiveMemoryWarning"]
 - ["15party_supporter14ViewControllerC", "init"]
+- ["15party_supporter14ViewControllerC", "minusButton1"]
+- ["15party_supporter14ViewControllerC", "minusButton2"]
+- ["15party_supporter14ViewControllerC", "minusButton3"]
+- ["15party_supporter14ViewControllerC", "numGirls"]
+- ["15party_supporter14ViewControllerC", "numHungry"]
+- ["15party_supporter14ViewControllerC", "numNotHungry"]
+- ["15party_supporter14ViewControllerC", "numPeople"]
+- ["15party_supporter14ViewControllerC", "plusButton1"]
+- ["15party_supporter14ViewControllerC", "plusButton2"]
+- ["15party_supporter14ViewControllerC", "plusButton3"]
 - ["15party_supporter14ViewControllerC", "viewDidLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -136,4 +196,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "2273e0b6560749631899e82af2412a52"
+interface-hash: "4623ad7c728a5abb58709fde45f0f798"
