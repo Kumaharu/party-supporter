@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
+options: "9507a19078b7cb45f58a639804b3de2f"
+build_time: [1512006539, 398267000]
+inputs:
+  "/Users/e165738/,p/,IDE/Xcode/Learn/Modeling/party_supporter/party_supporter/party_supporter/ViewController.swift": [1512006532, 0]
+  "/Users/e165738/,p/,IDE/Xcode/Learn/Modeling/party_supporter/party_supporter/party_supporter/AppDelegate.swift": [1512006532, 0]
