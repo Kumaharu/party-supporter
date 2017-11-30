@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dcq-Pv-9Pa">
-                                <rect key="frame" x="152" y="115.5" width="71" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="合計人数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dcq-Pv-9Pa">
+                                <rect key="frame" x="84" y="116" width="237" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -136,12 +136,15 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HS6-Ul-M2f">
                                 <rect key="frame" x="84" y="526" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="クリア"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxN-tk-BbC">
                                 <rect key="frame" x="240" y="526" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="決定"/>
+                                <connections>
+                                    <action selector="decision1:" destination="br3-Q7-kPv" eventType="touchUpInside" id="Qlm-Ia-hXO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -154,7 +157,11 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="pW1-f5-Uc4">
-                        <barButtonItem key="rightBarButtonItem" title="合計人数" id="Ra7-6V-KeY"/>
+                        <barButtonItem key="rightBarButtonItem" title="人数入力" id="Ra7-6V-KeY">
+                            <connections>
+                                <action selector="sumofpeopleButtonAction:" destination="br3-Q7-kPv" id="HzO-N2-KPa"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="numGirls" destination="8E3-v4-hNU" id="5hh-mX-iLl"/>
@@ -166,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QQW-bd-QOD" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="278" y="330"/>
+            <point key="canvasLocation" x="277.60000000000002" y="329.68515742128938"/>
         </scene>
         <!--Sumofpeople View Controller-->
         <scene sceneID="4Y7-is-MnE">
@@ -185,6 +192,9 @@
                                 <color key="backgroundColor" red="0.32750901999999998" green="1" blue="0.9504828354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="決定"/>
+                                <connections>
+                                    <action selector="decisionButtonAction:" destination="dIm-KC-pYB" eventType="touchUpInside" id="lPX-Si-FOi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -195,6 +205,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UlB-Gl-MJb"/>
                     </view>
+                    <connections>
+                        <outlet property="partyPicker" destination="Cgg-YK-yft" id="M37-oe-POW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="knV-Iz-bHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,18 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+  //設定値を扱うキーを設定(熊)
+    let settingKey = "party_value"
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+      //UserDefaultsのインスタンスを生成（by 熊)
+      let settings = UserDefaults.standard
+      //UserDefaultsに初期値を登録（熊）
+      settings.register(defaults: [settingKey:1])
+      
+      
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+      
+      
     }
     
-    /*以下の@がついた，４つの変数と，メソッドは画面のLabelとbuttonを関連付けしたもの．*/
+    /*以下の@がついた，４つの変数と，メソッドは画面のLabelとbuttonを関連付けしたもの．（熊）*/
     @IBOutlet weak var numPeople: UILabel!
     
     @IBOutlet weak var numGirls: UILabel!
@@ -47,4 +54,16 @@ class ViewController: UIViewController {
     @IBAction func minusButton3(_ sender: AnyObject) {
     }
     
+  @IBAction func decision1(_ sender: AnyObject) {
+    //UserDefaultsを生成（熊）
+    let settings = UserDefaults.standard
+    
+    let timerValue = settings.integer(forKey: settingKey)
+    numPeople.text = "合計人数 \(timerValue)人"
+    
+  }
+  //合計人数設定画面に遷移（熊）
+  @IBAction func sumofpeopleButtonAction(_ sender: AnyObject) {
+    performSegue(withIdentifier:"goSumofpeople", sender: nil)
+  }
 }
