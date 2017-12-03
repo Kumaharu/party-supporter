@@ -57,9 +57,9 @@ class ViewController: UIViewController {
   @IBAction func decision1(_ sender: AnyObject) {
     //UserDefaultsを生成（熊）
     let settings = UserDefaults.standard
-    
-    let timerValue = settings.integer(forKey: settingKey)
-    numPeople.text = "合計人数 \(timerValue)人"
+    //記憶されている値を代入
+    let partyValue = settings.integer(forKey: settingKey)
+    numPeople.text = "合計人数 \(partyValue)人"
     
   }
   //合計人数設定画面に遷移（熊）
