@@ -37,6 +37,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var numNotHungry: UILabel!
     
     @IBAction func plusButton1(_ sender: AnyObject) {
+        //UserDefaultsを生成（熊）
+        let settings = UserDefaults.standard
+        //記憶されている値を代入
+        let partyValue = settings.integer(forKey: settingKey)
+        
+        
     }
     
     @IBAction func plusButton2(_ sender: AnyObject) {
