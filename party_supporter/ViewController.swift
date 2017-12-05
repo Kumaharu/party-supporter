@@ -36,7 +36,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var numNotHungry: UILabel!
     
+    /*女性の人数の変数Girls_numberを作成 :担当　大迫*/
+    var Girls_number : Int = 0;
+    
     @IBAction func plusButton1(_ sender: AnyObject) {
+        /*+ボタンが押された時Girls_numberに+1をしてラベルnumGirlsに人数を表示する　:　担当　大迫*/
+        Girls_number += 1;
+        numGirls.text = String(Girls_number)+"人"
     }
     
     @IBAction func plusButton2(_ sender: AnyObject) {
@@ -46,6 +52,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func minusButton1(_ sender: AnyObject) {
+        /*-ボタンが押された時Girls_numberに-1をしてラベルnumGirlsに人数を表示する　:担当　大迫*/
+        Girls_number -= 1;
+        /*0以下にはならないようにGirls_numberが0以下になる時はGirls_numberを0にするようにif文を使用している*/
+        if(Girls_number >= 0){
+        numGirls.text = String(Girls_number)+"人"
+        }
+        else{
+            Girls_number = 0;
+            numGirls.text = String(Girls_number)+"人"
+        }
+        
     }
     
     @IBAction func minusButton2(_ sender: AnyObject) {
