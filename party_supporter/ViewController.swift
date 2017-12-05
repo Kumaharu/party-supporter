@@ -38,6 +38,8 @@ class ViewController: UIViewController {
 
     var Hungry : Int = 0;
     
+    @IBOutlet weak var sumGram: UILabel!
+    
     @IBAction func plusButton1(_ sender: AnyObject) {
     }
     
@@ -68,7 +70,11 @@ class ViewController: UIViewController {
     let settings = UserDefaults.standard
     //記憶されている値を代入
     let partyValue = settings.integer(forKey: settingKey)
-    numPeople.text = "合計人数 \(partyValue)人"
+    let sum :Int
+    sum = partyValue * 100
+    sumGram.text = ("\(sum)")
+    
+    
     
   }
   //合計人数設定画面に遷移（熊）
