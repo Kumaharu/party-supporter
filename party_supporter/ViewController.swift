@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     
     @IBAction func plusButton2(_ sender: AnyObject) {
         Hungry += 1
-            numHungry.text = ("\(Hungry)")
+            numHungry.text = ("\(Hungry)人")
     }
     
     @IBAction func plusButton3(_ sender: AnyObject) {
@@ -75,7 +75,7 @@ class ViewController: UIViewController {
         if Hungry != 0{
         Hungry -= 1
         }
-        numHungry.text = ("\(Hungry)")
+        numHungry.text = ("\(Hungry)人")
     }
     
     @IBAction func minusButton3(_ sender: AnyObject) {
