@@ -136,6 +136,9 @@
                                 <rect key="frame" x="315" y="686" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="クリア"/>
+                                <connections>
+                                    <action selector="clearMeat:" destination="br3-Q7-kPv" eventType="touchUpInside" id="CPx-S4-VuW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxN-tk-BbC">
                                 <rect key="frame" x="471" y="701" width="46" height="15"/>
@@ -174,6 +177,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="clearButton1" destination="HS6-Ul-M2f" id="oFg-fA-zjs"/>
                         <outlet property="numGirls" destination="8E3-v4-hNU" id="5hh-mX-iLl"/>
                         <outlet property="numHungry" destination="UNx-ab-P0g" id="opU-Co-wQe"/>
                         <outlet property="numNotHungry" destination="owN-QC-bED" id="tF8-La-9HD"/>

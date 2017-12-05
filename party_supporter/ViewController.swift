@@ -103,7 +103,10 @@ class ViewController: UIViewController {
         sum = partyValue * 100
         sumGram.text = ("\(sum)")
   }
-  //合計人数設定画面に遷移（熊）
+    @IBAction func clearMeat(_ sender: Any) {
+        
+    }
+    //合計人数設定画面に遷移（熊）
   @IBAction func sumofpeopleButtonAction(_ sender: AnyObject) {
     performSegue(withIdentifier:"goSumofpeople", sender: nil)
   }
