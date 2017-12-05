@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    /*控えめの変数*/
+    var hikaeme = 0
   //設定値を扱うキーを設定(熊)
     let settingKey = "party_value"
     override func viewDidLoad() {
@@ -43,6 +45,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func plusButton3(_ sender: AnyObject) {
+        //＋に関するコード（fu）
+        hikaeme += 1
+        numNotHungry.text  = "\(hikaeme)人"
     }
     
     @IBAction func minusButton1(_ sender: AnyObject) {
@@ -52,6 +57,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func minusButton3(_ sender: AnyObject) {
+        //- に関するコード（fu）
+        hikaeme -= 1
+        if(hikaeme < 0){
+            hikaeme = 0
+        }
+       
+            numNotHungry.text = "\(hikaeme)人"
+        
     }
     
   @IBAction func decision1(_ sender: AnyObject) {
