@@ -145,6 +145,13 @@
                                     <action selector="decision1:" destination="br3-Q7-kPv" eventType="touchUpInside" id="Qlm-Ia-hXO"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEA-Wv-dGa">
+                                <rect key="frame" x="107" y="456" width="126" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -171,6 +178,7 @@
                         <outlet property="numHungry" destination="UNx-ab-P0g" id="opU-Co-wQe"/>
                         <outlet property="numNotHungry" destination="owN-QC-bED" id="tF8-La-9HD"/>
                         <outlet property="numPeople" destination="Dcq-Pv-9Pa" id="9nF-Ip-9Hw"/>
+                        <outlet property="sumGram" destination="XEA-Wv-dGa" id="SWy-53-yTM"/>
                         <segue destination="dIm-KC-pYB" kind="show" identifier="goSumofpeople" id="hhN-uA-5DZ"/>
                     </connections>
                 </viewController>
