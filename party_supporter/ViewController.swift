@@ -55,15 +55,18 @@ class ViewController: UIViewController {
     }
     
   @IBAction func decision1(_ sender: AnyObject) {
-    //UserDefaultsを生成（熊）
-    let settings = UserDefaults.standard
-    //記憶されている値を代入
-    let partyValue = settings.integer(forKey: settingKey)
-    numPeople.text = "合計人数 \(partyValue)人"
     
   }
   //合計人数設定画面に遷移（熊）
   @IBAction func sumofpeopleButtonAction(_ sender: AnyObject) {
     performSegue(withIdentifier:"goSumofpeople", sender: nil)
+  }
+  
+  override func viewDidAppear(_ animated:Bool){
+    //UserDefaultsを生成（熊）
+    let settings = UserDefaults.standard
+    //記憶されている値を代入
+    let partyValue = settings.integer(forKey: settingKey)
+    numPeople.text = "合計人数 \(partyValue)人"
   }
 }
