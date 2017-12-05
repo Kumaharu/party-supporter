@@ -35,6 +35,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var numHungry: UILabel!
     
     @IBOutlet weak var numNotHungry: UILabel!
+
+    var Hungry : Int = 0;
+    
+    @IBOutlet weak var sumGram: UILabel!
     
     /*女性の人数の変数Girls_numberを作成 :担当　大迫*/
     var Girls_number : Int = 0;
@@ -46,6 +50,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func plusButton2(_ sender: AnyObject) {
+        Hungry += 1
+            numHungry.text = ("\(Hungry)")
     }
     
     @IBAction func plusButton3(_ sender: AnyObject) {
@@ -66,6 +72,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func minusButton2(_ sender: AnyObject) {
+        if Hungry != 0{
+        Hungry -= 1
+        }
+        numHungry.text = ("\(Hungry)")
     }
     
     @IBAction func minusButton3(_ sender: AnyObject) {
@@ -76,7 +86,11 @@ class ViewController: UIViewController {
     let settings = UserDefaults.standard
     //記憶されている値を代入
     let partyValue = settings.integer(forKey: settingKey)
-    numPeople.text = "合計人数 \(partyValue)人"
+    let sum :Int
+    sum = partyValue * 100
+    sumGram.text = ("\(sum)")
+    
+    
     
   }
   //合計人数設定画面に遷移（熊）
