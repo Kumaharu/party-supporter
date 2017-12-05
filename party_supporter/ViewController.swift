@@ -89,9 +89,7 @@ class ViewController: UIViewController {
         if(hikaeme < 0){
             hikaeme = 0
         }
-       
             numNotHungry.text = "\(hikaeme)人"
-        
     }
     
     @IBAction func decision1(_ sender: AnyObject) {
@@ -100,9 +98,10 @@ class ViewController: UIViewController {
         //記憶されている値を代入
         let partyValue = settings.integer(forKey: settingKey)
         let sum :Int
-        sum = partyValue * 100
-        sumGram.text = ("\(sum)")
+        sum = (partyValue * 200)-(hikaeme * 50)+(Hungry * 50)-(Girls_number * 25)
+        sumGram.text = ("\(sum)g")
   }
+    
     @IBAction func clearMeat(_ sender: Any) {
         
     }
