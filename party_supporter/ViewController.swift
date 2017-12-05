@@ -35,6 +35,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var numHungry: UILabel!
     
     @IBOutlet weak var numNotHungry: UILabel!
+
+    var Hungry : Int = 0;
     
     @IBOutlet weak var sumGram: UILabel!
     
@@ -42,6 +44,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func plusButton2(_ sender: AnyObject) {
+        Hungry += 1
+            numHungry.text = ("\(Hungry)")
     }
     
     @IBAction func plusButton3(_ sender: AnyObject) {
@@ -51,6 +55,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func minusButton2(_ sender: AnyObject) {
+        if Hungry != 0{
+        Hungry -= 1
+        }
+        numHungry.text = ("\(Hungry)")
     }
     
     @IBAction func minusButton3(_ sender: AnyObject) {
