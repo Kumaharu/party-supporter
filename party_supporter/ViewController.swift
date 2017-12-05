@@ -64,17 +64,14 @@ class ViewController: UIViewController {
     @IBAction func minusButton3(_ sender: AnyObject) {
     }
     
-  @IBAction func decision1(_ sender: AnyObject) {
-    //UserDefaultsを生成（熊）
-    let settings = UserDefaults.standard
-    //記憶されている値を代入
-    let partyValue = settings.integer(forKey: settingKey)
-    let sum :Int
-    sum = partyValue * 100
-    sumGram.text = ("\(sum)")
-    
-    
-    
+    @IBAction func decision1(_ sender: AnyObject) {
+        //UserDefaultsを生成（熊）
+        let settings = UserDefaults.standard
+        //記憶されている値を代入
+        let partyValue = settings.integer(forKey: settingKey)
+        let sum :Int
+        sum = partyValue * 100
+        sumGram.text = ("\(sum)")
   }
   //合計人数設定画面に遷移（熊）
   @IBAction func sumofpeopleButtonAction(_ sender: AnyObject) {
