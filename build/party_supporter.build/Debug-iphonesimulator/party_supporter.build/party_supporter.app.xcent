@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>FAKETEAMID.cats-eye.ie.ryukyu.party-supporter</string>
+	<string>465X5R7D68.cats-eye.ie.ryukyu.party-supporter</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>FAKETEAMID.cats-eye.ie.ryukyu.party-supporter</string>
+		<string>465X5R7D68.cats-eye.ie.ryukyu.party-supporter</string>
 	</array>
 </dict>
 </plist>

@@ -9,8 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    /*控えめの変数*/
-    var hikaeme = 0
   //設定値を扱うキーを設定(熊)
     let settingKey = "party_value"
     override func viewDidLoad() {
@@ -38,13 +36,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var numNotHungry: UILabel!
 
-    var Hungry : Int = 0;
-    
     @IBOutlet weak var sumGram: UILabel!
     
     /*女性の人数の変数Girls_numberを作成 :担当　大迫*/
     var Girls_number : Int = 0;
-    
+    var Hungry : Int = 0;
+    /*控えめの変数*/
+    var hikaeme = 0
+   
     @IBAction func plusButton1(_ sender: AnyObject) {
         /*+ボタンが押された時Girls_numberに+1をしてラベルnumGirlsに人数を表示する　:　担当　大迫*/
         Girls_number += 1;
@@ -92,6 +91,7 @@ class ViewController: UIViewController {
             numNotHungry.text = "\(hikaeme)人"
     }
     
+    
     @IBAction func decision1(_ sender: AnyObject) {
         //UserDefaultsを生成（熊）
         let settings = UserDefaults.standard
@@ -100,21 +100,39 @@ class ViewController: UIViewController {
         let sum :Int
         sum = (partyValue * 200)-(hikaeme * 50)+(Hungry * 50)-(Girls_number * 25)
         sumGram.text = ("\(sum)g")
-  }
-    
-    @IBAction func clearMeat(_ sender: Any) {
-        
     }
+
+    
+    /**
+     「クリア」ボタン
+        押すと、全ての値が初期化される。
+                        担当：松本  */
+    @IBAction func clearMeat(_ sender: Any) {
+        Girls_number = 0
+        Hungry = 0
+        hikaeme = 0
+        numGirls.text = "\(Girls_number)人"
+        numHungry.text = "\(Hungry)人"
+        numNotHungry.text = "\(hikaeme)人"
+        
+       /* // 合計人数はどうする？
+        let settings = UserDefaults.standard
+        settings.setValue(0, forKey:settingKey)
+        settings.synchronize()
+        numPeople.text = "合計人数　0人"
+*/
+    }
+    
     //合計人数設定画面に遷移（熊）
-  @IBAction func sumofpeopleButtonAction(_ sender: AnyObject) {
-    performSegue(withIdentifier:"goSumofpeople", sender: nil)
-  }
-  
-  override func viewDidAppear(_ animated:Bool){
-    //UserDefaultsを生成（熊）
-    let settings = UserDefaults.standard
-    //記憶されている値を代入
-    let partyValue = settings.integer(forKey: settingKey)
-    numPeople.text = "合計人数 \(partyValue)人"
-  }
+    @IBAction func sumofpeopleButtonAction(_ sender: AnyObject) {
+        performSegue(withIdentifier:"goSumofpeople", sender: nil)
+    }
+
+    override func viewDidAppear(_ animated:Bool){
+        //UserDefaultsを生成（熊）
+        let settings = UserDefaults.standard
+        //記憶されている値を代入
+        let partyValue = settings.integer(forKey: settingKey)
+        numPeople.text = "合計人数 \(partyValue)人"
+    }
 }
