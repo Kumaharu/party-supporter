@@ -38,26 +38,43 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var sumGram: UILabel!
     
+    let settings = UserDefaults.standard
     /*女性の人数の変数Girls_numberを作成 :担当　大迫*/
     var Girls_number : Int = 0;
     var Hungry : Int = 0;
     /*控えめの変数*/
     var hikaeme = 0
+    var sum :Int = 0
    
     @IBAction func plusButton1(_ sender: AnyObject) {
         /*+ボタンが押された時Girls_numberに+1をしてラベルnumGirlsに人数を表示する　:　担当　大迫*/
+        
+        //記憶されている値を代入
+        let partyValue = settings.integer(forKey: settingKey)
+        //girlsnumberが合計人数を超えないように設定
+        if(Girls_number < partyValue){
+            
         Girls_number += 1;
+            
+        }
+        
         numGirls.text = String(Girls_number)+"人"
     }
     
     @IBAction func plusButton2(_ sender: AnyObject) {
+        let partyValue = settings.integer(forKey: settingKey)
+        if(Hungry < partyValue){
         Hungry += 1
+        }
             numHungry.text = ("\(Hungry)人")
     }
     
     @IBAction func plusButton3(_ sender: AnyObject) {
         //＋に関するコード（fu）
+        let partyValue = settings.integer(forKey: settingKey)
+        if(hikaeme < partyValue){
         hikaeme += 1
+        }
         numNotHungry.text  = "\(hikaeme)人"
     }
     
@@ -97,8 +114,7 @@ class ViewController: UIViewController {
         let settings = UserDefaults.standard
         //記憶されている値を代入
         let partyValue = settings.integer(forKey: settingKey)
-        let sum :Int
-        sum = (partyValue * 200)-(hikaeme * 50)+(Hungry * 50)-(Girls_number * 25)
+        sum = (partyValue * 300)-(hikaeme * 50)+(Hungry * 100)-(Girls_number * 100)
         sumGram.text = ("\(sum)g")
     }
 
@@ -111,9 +127,11 @@ class ViewController: UIViewController {
         Girls_number = 0
         Hungry = 0
         hikaeme = 0
+        sum = 0
         numGirls.text = "\(Girls_number)人"
         numHungry.text = "\(Hungry)人"
         numNotHungry.text = "\(hikaeme)人"
+        sumGram.text = "\(sum)g"
         
        /* // 合計人数はどうする？
         let settings = UserDefaults.standard
@@ -130,7 +148,6 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(_ animated:Bool){
         //UserDefaultsを生成（熊）
-        let settings = UserDefaults.standard
         //記憶されている値を代入
         let partyValue = settings.integer(forKey: settingKey)
         numPeople.text = "合計人数 \(partyValue)人"
