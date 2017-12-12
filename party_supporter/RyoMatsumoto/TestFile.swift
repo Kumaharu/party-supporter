@@ -7,3 +7,5 @@
 //
 
 import Foundation
+
+// masterにマージ終了(12/12)
