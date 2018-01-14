@@ -1,155 +1,70 @@
-////
-//  ViewController.swift
-//  Test.swift
+
 //
-//  Created by 福田　光希 on 2017/11/21.
-//  Copyright © 2017年 福田　光希. All rights reserved.
+//  sumofpeopleViewController.swift
+//  party_supporter
+//
+//  Created by 熊埜御堂元晴 on 2017/11/30.
+//  Copyright © 2017年 Univ-ryukyu. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
-  //設定値を扱うキーを設定(熊)
-    let settingKey = "party_value"
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      //UserDefaultsのインスタンスを生成（by 熊)
-      let settings = UserDefaults.standard
-      //UserDefaultsに初期値を登録（熊）
-      settings.register(defaults: [settingKey:1])
-      
-      
-    }
+class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate{
+  //UIPickerViewに表示するデータをArrayで作成（熊）
+  let sumofpeopleArray : [Int] = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+  //設定値を覚えるキーを設定（熊）
+  let settingKey = "party_value"
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    //timerSettingPickerのデリゲートデータソースの通知先を指定（熊）
+    partyPicker.delegate = self
+    partyPicker.dataSource = self
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-      
-      
-    }
-    
-    /*以下の@がついた，４つの変数と，メソッドは画面のLabelとbuttonを関連付けしたもの．（熊）*/
-    @IBOutlet weak var numPeople: UILabel!
-    
-    @IBOutlet weak var numGirls: UILabel!
-    
-    @IBOutlet weak var numHungry: UILabel!
-    
-    @IBOutlet weak var numNotHungry: UILabel!
-
-    @IBOutlet weak var sumGram: UILabel!
-    
+    //UserDefaultsの取得（熊）
     let settings = UserDefaults.standard
-    /*女性の人数の変数Girls_numberを作成 :担当　大迫*/
-    var Girls_number : Int = 0;
-    var Hungry : Int = 0;
-    /*控えめの変数*/
-    var hikaeme = 0
-    var sum :Int = 0
-   
-    @IBAction func plusButton1(_ sender: AnyObject) {
-        /*+ボタンが押された時Girls_numberに+1をしてラベルnumGirlsに人数を表示する　:　担当　大迫*/
-        
-        //記憶されている値を代入
-        let partyValue = settings.integer(forKey: settingKey)
-        //girlsnumberが合計人数を超えないように設定
-        if(Girls_number < partyValue){
-            
-        Girls_number += 1;
-            
-        }
-        
-        numGirls.text = String(Girls_number)+"人"
-    }
+    let partyValue = settings.integer(forKey: settingKey)
     
-    @IBAction func plusButton2(_ sender: AnyObject) {
-        let partyValue = settings.integer(forKey: settingKey)
-        if(Hungry < partyValue){
-        Hungry += 1
-        }
-            numHungry.text = ("\(Hungry)人")
+    //Pickerの選択を合わせる（初期状態）（熊）
+    for row in 0..<sumofpeopleArray.count{
+      if sumofpeopleArray[row] == partyValue{
+        partyPicker.selectRow(row, inComponent: 0, animated: true)
+      }
     }
-    
-    @IBAction func plusButton3(_ sender: AnyObject) {
-        //＋に関するコード（fu）
-        let partyValue = settings.integer(forKey: settingKey)
-        if(hikaeme < partyValue){
-        hikaeme += 1
-        }
-        numNotHungry.text  = "\(hikaeme)人"
-    }
-    
-    @IBAction func minusButton1(_ sender: AnyObject) {
-        /*-ボタンが押された時Girls_numberに-1をしてラベルnumGirlsに人数を表示する　:担当　大迫*/
-        Girls_number -= 1;
-        /*0以下にはならないようにGirls_numberが0以下になる時はGirls_numberを0にするようにif文を使用している*/
-        if(Girls_number >= 0){
-        numGirls.text = String(Girls_number)+"人"
-        }
-        else{
-            Girls_number = 0;
-            numGirls.text = String(Girls_number)+"人"
-        }
-        
-    }
-    
-    @IBAction func minusButton2(_ sender: AnyObject) {
-        if Hungry != 0{
-        Hungry -= 1
-        }
-        numHungry.text = ("\(Hungry)人")
-    }
-    
-    @IBAction func minusButton3(_ sender: AnyObject) {
-        //- に関するコード（fu）
-        hikaeme -= 1
-        if(hikaeme < 0){
-            hikaeme = 0
-        }
-            numNotHungry.text = "\(hikaeme)人"
-    }
-    
-    
-    @IBAction func decision1(_ sender: AnyObject) {
-        //UserDefaultsを生成（熊）
-        let settings = UserDefaults.standard
-        //記憶されている値を代入
-        let partyValue = settings.integer(forKey: settingKey)
-        sum = (partyValue * 300)-(hikaeme * 50)+(Hungry * 100)-(Girls_number * 100)
-        sumGram.text = ("\(sum)g")
-    }
-
-    
-    /**
-     「クリア」ボタン
-        押すと、全ての値が初期化される。
-                        担当：松本  */
-    @IBAction func clearMeat(_ sender: Any) {
-        Girls_number = 0
-        Hungry = 0
-        hikaeme = 0
-        sum = 0
-        numGirls.text = "\(Girls_number)人"
-        numHungry.text = "\(Hungry)人"
-        numNotHungry.text = "\(hikaeme)人"
-        sumGram.text = "\(sum)g"
-        
-       /* // 合計人数はどうする？
-        let settings = UserDefaults.standard
-        settings.setValue(0, forKey:settingKey)
-        settings.synchronize()
-        numPeople.text = "合計人数　0人"
-*/
-    }
-    
-    //合計人数設定画面に遷移（熊）
-    @IBAction func sumofpeopleButtonAction(_ sender: AnyObject) {
-        performSegue(withIdentifier:"goSumofpeople", sender: nil)
-    }
-
-    override func viewDidAppear(_ animated:Bool){
-        //UserDefaultsを生成（熊）
-        //記憶されている値を代入
-        let partyValue = settings.integer(forKey: settingKey)
-        numPeople.text = "合計人数 \(partyValue)人"
-    }
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+  }
+  //数字表示パーツ（pickerView）（熊）
+  
+  @IBOutlet weak var partyPicker: UIPickerView!
+  //決定ボタンが押されると前の画面に戻る（熊）
+  @IBAction func decisionButtonAction(_ sender: AnyObject) {
+    _ = navigationController?.popViewController(animated: true)
+  }
+  
+  
+  //UIPickerViewの列数を選択（熊）
+  func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    return 1
+  }
+  //UIPickerViewの行数を選択（熊）
+  func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    return sumofpeopleArray.count
+  }
+  
+  //UIPickerViewの表示をする内容を設定（熊）
+  func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    return String(sumofpeopleArray[row])
+  }
+  //picker選択時に実行（熊）
+  func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    let settings = UserDefaults.standard
+    settings.setValue(sumofpeopleArray[row], forKey:settingKey)
+    settings.synchronize()
+  }
+  
+  
 }
+

@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		79495AC21FD010C70016EEEE /* sumofpeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79495AC11FD010C70016EEEE /* sumofpeopleViewController.swift */; };
+		796168B7200B4A02006CD899 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796168B6200B4A02006CD899 /* ViewController.swift */; };
 		ABC58D571FCF9B04006908A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC58D561FCF9B04006908A3 /* AppDelegate.swift */; };
-		ABC58D591FCF9B04006908A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC58D581FCF9B04006908A3 /* ViewController.swift */; };
 		ABC58D5C1FCF9B04006908A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC58D5A1FCF9B04006908A3 /* Main.storyboard */; };
 		ABC58D5E1FCF9B04006908A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC58D5D1FCF9B04006908A3 /* Assets.xcassets */; };
 		ABC58D611FCF9B04006908A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC58D5F1FCF9B04006908A3 /* LaunchScreen.storyboard */; };
@@ -21,10 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		79495AC11FD010C70016EEEE /* sumofpeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sumofpeopleViewController.swift; sourceTree = "<group>"; };
+		796168B6200B4A02006CD899 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ABC58D531FCF9B04006908A3 /* party_supporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = party_supporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC58D561FCF9B04006908A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ABC58D581FCF9B04006908A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ABC58D5B1FCF9B04006908A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABC58D5D1FCF9B04006908A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABC58D601FCF9B04006908A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,12 +70,11 @@
 				ABC58D681FCF9E0F006908A3 /* fu */,
 				ABC58D691FCF9E0F006908A3 /* ikki */,
 				ABC58D561FCF9B04006908A3 /* AppDelegate.swift */,
-				ABC58D581FCF9B04006908A3 /* ViewController.swift */,
-				ABC58D5A1FCF9B04006908A3 /* Main.storyboard */,
-				79495AC11FD010C70016EEEE /* sumofpeopleViewController.swift */,
 				ABC58D5D1FCF9B04006908A3 /* Assets.xcassets */,
+				ABC58D5A1FCF9B04006908A3 /* Main.storyboard */,
 				ABC58D5F1FCF9B04006908A3 /* LaunchScreen.storyboard */,
 				ABC58D621FCF9B04006908A3 /* Info.plist */,
+				796168B6200B4A02006CD899 /* ViewController.swift */,
 			);
 			path = party_supporter;
 			sourceTree = "<group>";
@@ -158,8 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79495AC21FD010C70016EEEE /* sumofpeopleViewController.swift in Sources */,
-				ABC58D591FCF9B04006908A3 /* ViewController.swift in Sources */,
+				796168B7200B4A02006CD899 /* ViewController.swift in Sources */,
 				ABC58D711FCF9E19006908A3 /* kumatest.swift in Sources */,
 				ABC58D571FCF9B04006908A3 /* AppDelegate.swift in Sources */,
 			);
@@ -299,7 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 465X5R7D68;
+				DEVELOPMENT_TEAM = TW8B83PZXG;
 				INFOPLIST_FILE = party_supporter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cats-eye.ie.ryukyu.party-supporter";
@@ -314,7 +310,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 465X5R7D68;
+				DEVELOPMENT_TEAM = TW8B83PZXG;
 				INFOPLIST_FILE = party_supporter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cats-eye.ie.ryukyu.party-supporter";
