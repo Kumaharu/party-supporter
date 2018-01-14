@@ -1,4 +1,3 @@
-
 //
 //  sumofpeopleViewController.swift
 //  party_supporter
@@ -18,6 +17,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
   override func viewDidLoad() {
     super.viewDidLoad()
     //timerSettingPickerのデリゲートデータソースの通知先を指定（熊）
+    
     partyPicker.delegate = self
     partyPicker.dataSource = self
     
@@ -37,7 +37,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     super.didReceiveMemoryWarning()
   }
   //数字表示パーツ（pickerView）（熊）
-  
+ 
   @IBOutlet weak var partyPicker: UIPickerView!
   //決定ボタンが押されると前の画面に戻る（熊）
   @IBAction func decisionButtonAction(_ sender: AnyObject) {
