@@ -38,7 +38,7 @@
                                 <rect key="frame" x="284" y="612" width="200" height="200"/>
                                 <color key="backgroundColor" red="1" green="0.60096829280834574" blue="0.13392393871484831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="RHp-es-1eU"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="RHp-es-1eU"/>
                                     <constraint firstAttribute="height" constant="200" id="vyC-ha-rE6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -52,7 +52,7 @@
                                 <color key="backgroundColor" red="0.59358569304080433" green="1" blue="0.28456561280202886" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="175-HG-LqX"/>
-                                    <constraint firstAttribute="width" constant="200" id="k8j-Pg-vXw"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="k8j-Pg-vXw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="バーベキュー"/>
@@ -90,7 +90,7 @@
                                 <rect key="frame" x="284" y="212" width="200" height="100"/>
                                 <color key="backgroundColor" red="0.89421845488464202" green="1" blue="0.97339139646305417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="hwh-BD-z0f"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="hwh-BD-z0f"/>
                                     <constraint firstAttribute="height" constant="100" id="oo5-Ch-bzT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -123,13 +123,40 @@
         <!--View Controller-->
         <scene sceneID="MOK-Oc-fYy">
             <objects>
-                <viewController id="wXd-04-JTl" sceneMemberID="viewController">
+                <viewController id="wXd-04-JTl" customClass="ViewController" customModule="party_supporter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="sum2" id="N6x-f5-6Ws">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合計人数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zuk-OP-Mkn">
+                                <rect key="frame" x="284.5" y="262" width="200" height="100"/>
+                                <color key="backgroundColor" red="0.80641177791832575" green="1" blue="0.97132327777469563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="7ly-Zt-Ji4"/>
+                                    <constraint firstAttribute="height" constant="100" id="CUe-RO-anu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y4W-7S-pTF">
+                                <rect key="frame" x="0.0" y="504" width="768" height="216"/>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zuk-OP-Mkn" firstAttribute="centerY" secondItem="N6x-f5-6Ws" secondAttribute="centerY" constant="-200" id="Eye-cB-GHu"/>
+                            <constraint firstItem="dLQ-Fr-hRJ" firstAttribute="trailing" secondItem="Y4W-7S-pTF" secondAttribute="trailing" id="GGy-xT-g8G"/>
+                            <constraint firstItem="Y4W-7S-pTF" firstAttribute="centerX" secondItem="N6x-f5-6Ws" secondAttribute="centerX" id="Uj6-Hs-bec"/>
+                            <constraint firstItem="Y4W-7S-pTF" firstAttribute="centerY" secondItem="N6x-f5-6Ws" secondAttribute="centerY" constant="100" id="hj7-WX-5Ja"/>
+                            <constraint firstItem="Y4W-7S-pTF" firstAttribute="leading" secondItem="dLQ-Fr-hRJ" secondAttribute="leading" id="jrf-r2-ICN"/>
+                            <constraint firstItem="Zuk-OP-Mkn" firstAttribute="centerX" secondItem="N6x-f5-6Ws" secondAttribute="centerX" id="t08-qF-Xir"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dLQ-Fr-hRJ"/>
                     </view>
+                    <connections>
+                        <outlet property="partyPicker" destination="Y4W-7S-pTF" id="pVB-PA-BwH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WO3-sy-bDY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
