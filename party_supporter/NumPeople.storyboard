@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aQ3-ye-baC">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sumofpeople View Controller-->
+        <scene sceneID="xSD-Tg-jG1">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GyI-gG-rt3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="aQ3-ye-baC" customClass="sumofpeopleViewController" customModule="party_supporter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kwT-NZ-VcJ">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTW-hY-Ndc">
+                                <rect key="frame" x="336" y="514" width="97" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.32750901999999998" green="1" blue="0.9504828354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="決定"/>
+                                <connections>
+                                    <action selector="decisionButtonAction:" destination="aQ3-ye-baC" eventType="touchUpInside" id="fSC-JI-gOD"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Bo-5E-QIm">
+                                <rect key="frame" x="0.0" y="89" width="768" height="329"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="uXJ-rX-I9K"/>
+                    </view>
+                    <connections>
+                        <outlet property="partyPicker" destination="9Bo-5E-QIm" id="mBd-pC-4UP"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1008.59375" y="90.234375"/>
+        </scene>
+    </scenes>
+</document>
