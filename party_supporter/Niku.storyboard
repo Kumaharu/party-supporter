@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--お肉-->
         <scene sceneID="Mln-Iz-m15">
             <objects>
                 <viewController id="B14-hP-khX" customClass="ViewController" customModule="party_supporter" customModuleProvider="target" sceneMemberID="viewController">
@@ -152,6 +152,13 @@
                                     <action selector="clearMeat:" destination="B14-hP-khX" eventType="touchUpInside" id="OlJ-Qe-GFo"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="お肉画面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvb-Ui-4RV">
+                                <rect key="frame" x="60" y="96" width="82" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="n1r-vS-VW4"/>
@@ -162,6 +169,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <tabBarItem key="tabBarItem" title="お肉" id="i11-aS-plA"/>
                     <navigationItem key="navigationItem" id="nsO-wd-Cf6">
                         <barButtonItem key="rightBarButtonItem" title="人数入力" id="d9N-vJ-oGN">
                             <connections>
@@ -169,6 +177,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="numGirls" destination="Rj3-cJ-ehI" id="JUN-BQ-Sxj"/>
                         <outlet property="numHungry" destination="uF0-ce-yio" id="Bsg-9M-wQX"/>
