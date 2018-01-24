@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		126F176D9B11092700E6EC54 /* 更新履歴.txt in Resources */ = {isa = PBXBuildFile; fileRef = 126F15843DA241EEAAA467DF /* 更新履歴.txt */; };
 		79495AC21FD010C70016EEEE /* sumofpeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79495AC11FD010C70016EEEE /* sumofpeopleViewController.swift */; };
 		AB9182F82018EFB6004B1CE5 /* Osusume.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9182F72018EFB6004B1CE5 /* Osusume.storyboard */; };
 		AB9182FA2018F02B004B1CE5 /* Sake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9182F92018F02B004B1CE5 /* Sake.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		126F15843DA241EEAAA467DF /* 更新履歴.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "更新履歴.txt"; path = "RyoMatsumoto/更新履歴.txt"; sourceTree = "<group>"; };
 		79495AC11FD010C70016EEEE /* sumofpeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sumofpeopleViewController.swift; sourceTree = "<group>"; };
 		AB9182F72018EFB6004B1CE5 /* Osusume.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Osusume.storyboard; sourceTree = "<group>"; };
 		AB9182F92018F02B004B1CE5 /* Sake.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sake.storyboard; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				79495AC11FD010C70016EEEE /* sumofpeopleViewController.swift */,
 				ABC58D5D1FCF9B04006908A3 /* Assets.xcassets */,
 				ABC58D621FCF9B04006908A3 /* Info.plist */,
+				126F15843DA241EEAAA467DF /* 更新履歴.txt */,
 			);
 			path = party_supporter;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				ABC58D5C1FCF9B04006908A3 /* Main.storyboard in Resources */,
 				AB9182FA2018F02B004B1CE5 /* Sake.storyboard in Resources */,
 				ABC58D6B1FCF9E0F006908A3 /* ikki in Resources */,
+				126F176D9B11092700E6EC54 /* 更新履歴.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
