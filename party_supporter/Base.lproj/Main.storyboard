@@ -52,11 +52,10 @@
                                     <segue destination="yfH-cb-DsT" kind="show" id="Rtz-aY-u7X"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DKs-8D-DdP">
-                                <rect key="frame" x="0.0" y="512" width="768" height="216"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKs-8D-DdP">
+                                <rect key="frame" x="224" y="512" width="320" height="216"/>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="合計人数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7f-JR-DIX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合計人数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7f-JR-DIX">
                                 <rect key="frame" x="284" y="344" width="200" height="100"/>
                                 <color key="backgroundColor" red="0.80641177789999996" green="1" blue="0.97132327780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -69,6 +68,12 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="e7f-JR-DIX" firstAttribute="centerX" secondItem="DKs-8D-DdP" secondAttribute="centerX" id="Jpe-FT-xEi"/>
+                            <constraint firstItem="e7f-JR-DIX" firstAttribute="centerX" secondItem="iae-yf-ECS" secondAttribute="centerX" id="Qe9-3m-cD8"/>
+                            <constraint firstItem="DKs-8D-DdP" firstAttribute="top" secondItem="e7f-JR-DIX" secondAttribute="bottom" constant="68" id="crZ-cP-bvt"/>
+                            <constraint firstItem="e7f-JR-DIX" firstAttribute="top" secondItem="q3R-YC-czb" secondAttribute="top" constant="280" id="rgU-aK-h33"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="q3R-YC-czb"/>
                     </view>
                     <navigationItem key="navigationItem" id="x9S-1Z-2h8">
