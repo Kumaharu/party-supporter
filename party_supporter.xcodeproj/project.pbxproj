@@ -22,6 +22,8 @@
 		ABC58D6F1FCF9E19006908A3 /* Koo in Resources */ = {isa = PBXBuildFile; fileRef = ABC58D6C1FCF9E19006908A3 /* Koo */; };
 		ABC58D701FCF9E19006908A3 /* RyoMatsumoto in Resources */ = {isa = PBXBuildFile; fileRef = ABC58D6D1FCF9E19006908A3 /* RyoMatsumoto */; };
 		ABC58D711FCF9E19006908A3 /* kumatest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC58D6E1FCF9E19006908A3 /* kumatest.swift */; };
+		F450A7962022A5360012291F /* sake2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450A7952022A5360012291F /* sake2.swift */; };
+		F450A79A2022A8240012291F /* sake1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450A7992022A8240012291F /* sake1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		ABC58D6C1FCF9E19006908A3 /* Koo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Koo; sourceTree = "<group>"; };
 		ABC58D6D1FCF9E19006908A3 /* RyoMatsumoto */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RyoMatsumoto; sourceTree = "<group>"; };
 		ABC58D6E1FCF9E19006908A3 /* kumatest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kumatest.swift; sourceTree = "<group>"; };
+		F450A7952022A5360012291F /* sake2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sake2.swift; sourceTree = "<group>"; };
+		F450A7992022A8240012291F /* sake1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sake1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 				ABC58D691FCF9E0F006908A3 /* ikki */,
 				ABC58D561FCF9B04006908A3 /* AppDelegate.swift */,
 				ABC58D581FCF9B04006908A3 /* ViewController.swift */,
+				F450A7992022A8240012291F /* sake1.swift */,
+				F450A7952022A5360012291F /* sake2.swift */,
 				ABC58D5A1FCF9B04006908A3 /* Main.storyboard */,
 				AB9182F72018EFB6004B1CE5 /* Osusume.storyboard */,
 				AB9182F92018F02B004B1CE5 /* Sake.storyboard */,
@@ -176,8 +182,10 @@
 			files = (
 				79495AC21FD010C70016EEEE /* sumofpeopleViewController.swift in Sources */,
 				ABC58D591FCF9B04006908A3 /* ViewController.swift in Sources */,
+				F450A7962022A5360012291F /* sake2.swift in Sources */,
 				ABC58D711FCF9E19006908A3 /* kumatest.swift in Sources */,
 				ABC58D571FCF9B04006908A3 /* AppDelegate.swift in Sources */,
+				F450A79A2022A8240012291F /* sake1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
