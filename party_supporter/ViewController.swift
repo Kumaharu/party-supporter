@@ -19,6 +19,7 @@ class ViewController: UIViewController {
       settings.register(defaults: [settingKey:1])
       
       
+      
     }
     
     override func didReceiveMemoryWarning() {
@@ -63,6 +64,7 @@ class ViewController: UIViewController {
     
     @IBAction func plusButton2(_ sender: AnyObject) {
         let partyValue = settings.integer(forKey: settingKey)
+      
         if(Hungry < partyValue){
         Hungry += 1
         }
@@ -116,6 +118,9 @@ class ViewController: UIViewController {
         let partyValue = settings.integer(forKey: settingKey)
         sum = (partyValue * 300)-(hikaeme * 50)+(Hungry * 100)-(Girls_number * 100)
         sumGram.text = ("\(sum)g")
+      
+      
+        
     }
 
     

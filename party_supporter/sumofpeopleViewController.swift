@@ -35,6 +35,10 @@ class sumofpeopleViewController: UIViewController, UIPickerViewDataSource, UIPic
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+  
+  
+  
+  
     //数字表示パーツ（pickerView）（熊）
   @IBOutlet weak var partyPicker: UIPickerView!
   //決定ボタンが押されると前の画面に戻る（熊）
