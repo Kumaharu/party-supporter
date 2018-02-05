@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		126F176D9B11092700E6EC54 /* 更新履歴.txt in Resources */ = {isa = PBXBuildFile; fileRef = 126F15843DA241EEAAA467DF /* 更新履歴.txt */; };
+		3BC63A552028971F00129EFF /* Yasai.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC63A542028971F00129EFF /* Yasai.storyboard */; };
+		3BC63A5720289B1600129EFF /* YasaiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC63A5620289B1600129EFF /* YasaiController.swift */; };
 		79495AC21FD010C70016EEEE /* sumofpeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79495AC11FD010C70016EEEE /* sumofpeopleViewController.swift */; };
 		AB9182F82018EFB6004B1CE5 /* Osusume.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9182F72018EFB6004B1CE5 /* Osusume.storyboard */; };
 		AB9182FA2018F02B004B1CE5 /* Sake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9182F92018F02B004B1CE5 /* Sake.storyboard */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		126F15843DA241EEAAA467DF /* 更新履歴.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "更新履歴.txt"; path = "RyoMatsumoto/更新履歴.txt"; sourceTree = "<group>"; };
+		3BC63A542028971F00129EFF /* Yasai.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Yasai.storyboard; sourceTree = "<group>"; };
+		3BC63A5620289B1600129EFF /* YasaiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YasaiController.swift; sourceTree = "<group>"; };
 		79495AC11FD010C70016EEEE /* sumofpeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sumofpeopleViewController.swift; sourceTree = "<group>"; };
 		AB9182F72018EFB6004B1CE5 /* Osusume.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Osusume.storyboard; sourceTree = "<group>"; };
 		AB9182F92018F02B004B1CE5 /* Sake.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sake.storyboard; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 				F450A7952022A5360012291F /* sake2.swift */,
 				ABC58D5A1FCF9B04006908A3 /* Main.storyboard */,
 				AB9182F72018EFB6004B1CE5 /* Osusume.storyboard */,
+				3BC63A542028971F00129EFF /* Yasai.storyboard */,
+				3BC63A5620289B1600129EFF /* YasaiController.swift */,
 				AB9182F92018F02B004B1CE5 /* Sake.storyboard */,
 				ABA717082010727600497EFC /* Niku.storyboard */,
 				AB9182FB2018FA83004B1CE5 /* Result.storyboard */,
@@ -161,6 +167,7 @@
 			files = (
 				ABC58D6F1FCF9E19006908A3 /* Koo in Resources */,
 				ABC58D701FCF9E19006908A3 /* RyoMatsumoto in Resources */,
+				3BC63A552028971F00129EFF /* Yasai.storyboard in Resources */,
 				ABA717092010727600497EFC /* Niku.storyboard in Resources */,
 				ABC58D6A1FCF9E0F006908A3 /* fu in Resources */,
 				AB9182F82018EFB6004B1CE5 /* Osusume.storyboard in Resources */,
@@ -185,6 +192,7 @@
 				F450A7962022A5360012291F /* sake2.swift in Sources */,
 				ABC58D711FCF9E19006908A3 /* kumatest.swift in Sources */,
 				ABC58D571FCF9B04006908A3 /* AppDelegate.swift in Sources */,
+				3BC63A5720289B1600129EFF /* YasaiController.swift in Sources */,
 				F450A79A2022A8240012291F /* sake1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
