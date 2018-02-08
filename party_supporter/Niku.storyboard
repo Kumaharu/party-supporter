@@ -164,7 +164,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="pPI-Kt-G5E" kind="presentation" id="Dq2-Wo-9sP"/>
+                                    <segue destination="pPI-Kt-G5E" kind="show" id="l5r-xy-Itc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -225,7 +225,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="B14-hP-khX" kind="presentation" id="nVc-l1-Rhs"/>
+                                    <segue destination="B14-hP-khX" kind="show" id="Atz-dh-V2V"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="キャベツ1/4束" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKR-HW-qdU">
