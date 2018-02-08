@@ -45,6 +45,7 @@ class ViewController: UIViewController {
     /*控えめの変数*/
     var hikaeme = 0
     var sum :Int = 0
+    var sum_veg :Int = 0
    
     @IBAction func plusButton1(_ sender: AnyObject) {
         /*+ボタンが押された時Girls_numberに+1をしてラベルnumGirlsに人数を表示する　:　担当　大迫*/
@@ -116,6 +117,9 @@ class ViewController: UIViewController {
         let partyValue = settings.integer(forKey: settingKey)
         sum = (partyValue * 300)-(hikaeme * 50)+(Hungry * 100)-(Girls_number * 100)
         sumGram.text = ("\(sum)g")
+        sum_veg = sum / 2
+        settings.set(sum_veg, forKey: "sum_veg")
+        settings.synchronize()
     }
 
     
