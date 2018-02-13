@@ -118,10 +118,11 @@ class ViewController: UIViewController {
         //記憶されている値を代入
         let partyValue = settings.integer(forKey: settingKey)
         sum = (partyValue * 300)-(hikaeme * 50)+(Hungry * 100)-(Girls_number * 100)
-        sumGram.text = ("\(sum)g")
         sum_veg = sum / 2
         settings.set(sum_veg, forKey: "sum_veg")
+        settings.set(sum, forKey: "sum")
         settings.synchronize()
+        sumGram.text = ("\(sum)g")
         sumVeg.text = ("野菜の量:\(sum_veg)g")
     }
 
@@ -159,6 +160,7 @@ class ViewController: UIViewController {
         let partyValue = settings.integer(forKey: settingKey)
         numPeople.text = "合計人数 \(partyValue)人"
         settings.set(sum_veg, forKey: "sum_veg")
+        settings.set(sum, forKey: "sum")
         settings.synchronize()
     }
 }
