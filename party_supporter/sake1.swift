@@ -149,6 +149,10 @@ class sake1: UIViewController {
         settings.set(sake, forKey: "sake")
         settings.synchronize()
         
+        settings.set(sum, forKey: "sake_sum")
+        settings.synchronize()
+
+        
         Man_number = partyValue - Girls_number
         //can = (Man_number * 3)+(Girls_number * 2)
         sumGram.text = ("目安のアルコール量は\(sum)g")
@@ -204,5 +208,7 @@ class sake1: UIViewController {
         //記憶されている値を代入
         let partyValue = settings.integer(forKey: settingKey)
         numPeople.text = "合計人数 \(partyValue)人"
+        settings.set(sake, forKey: "sake")
+        settings.synchronize()
     }
 }

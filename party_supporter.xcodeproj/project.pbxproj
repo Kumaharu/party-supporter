@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		126F176D9B11092700E6EC54 /* 更新履歴.txt in Resources */ = {isa = PBXBuildFile; fileRef = 126F15843DA241EEAAA467DF /* 更新履歴.txt */; };
 		3BC63A592028A60A00129EFF /* YasaiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC63A582028A60A00129EFF /* YasaiController.swift */; };
+		3BED32B4203309DA00B25612 /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BED32B3203309DA00B25612 /* ResultController.swift */; };
 		79495AC21FD010C70016EEEE /* sumofpeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79495AC11FD010C70016EEEE /* sumofpeopleViewController.swift */; };
 		AB9182F82018EFB6004B1CE5 /* Osusume.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9182F72018EFB6004B1CE5 /* Osusume.storyboard */; };
 		AB9182FA2018F02B004B1CE5 /* Sake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9182F92018F02B004B1CE5 /* Sake.storyboard */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		126F15843DA241EEAAA467DF /* 更新履歴.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "更新履歴.txt"; path = "RyoMatsumoto/更新履歴.txt"; sourceTree = "<group>"; };
 		3BC63A582028A60A00129EFF /* YasaiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YasaiController.swift; sourceTree = "<group>"; };
+		3BED32B3203309DA00B25612 /* ResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
 		79495AC11FD010C70016EEEE /* sumofpeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sumofpeopleViewController.swift; sourceTree = "<group>"; };
 		AB9182F72018EFB6004B1CE5 /* Osusume.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Osusume.storyboard; sourceTree = "<group>"; };
 		AB9182F92018F02B004B1CE5 /* Sake.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sake.storyboard; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				AB9182F92018F02B004B1CE5 /* Sake.storyboard */,
 				ABA717082010727600497EFC /* Niku.storyboard */,
 				AB9182FB2018FA83004B1CE5 /* Result.storyboard */,
+				3BED32B3203309DA00B25612 /* ResultController.swift */,
 				79495AC11FD010C70016EEEE /* sumofpeopleViewController.swift */,
 				ABC58D5D1FCF9B04006908A3 /* Assets.xcassets */,
 				ABC58D621FCF9B04006908A3 /* Info.plist */,
@@ -187,6 +190,7 @@
 				ABC58D591FCF9B04006908A3 /* ViewController.swift in Sources */,
 				F450A7962022A5360012291F /* sake2.swift in Sources */,
 				ABC58D711FCF9E19006908A3 /* kumatest.swift in Sources */,
+				3BED32B4203309DA00B25612 /* ResultController.swift in Sources */,
 				ABC58D571FCF9B04006908A3 /* AppDelegate.swift in Sources */,
 				3BC63A592028A60A00129EFF /* YasaiController.swift in Sources */,
 				F450A79A2022A8240012291F /* sake1.swift in Sources */,
