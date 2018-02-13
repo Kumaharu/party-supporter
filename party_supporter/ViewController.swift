@@ -38,6 +38,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var sumGram: UILabel!
     
+    @IBOutlet weak var sumVeg: UILabel!
+    
     let settings = UserDefaults.standard
     /*女性の人数の変数Girls_numberを作成 :担当　大迫*/
     var Girls_number : Int = 0;
@@ -120,6 +122,7 @@ class ViewController: UIViewController {
         sum_veg = sum / 2
         settings.set(sum_veg, forKey: "sum_veg")
         settings.synchronize()
+        sumVeg.text = ("野菜の量:\(sum_veg)g")
     }
 
     
@@ -155,5 +158,7 @@ class ViewController: UIViewController {
         //記憶されている値を代入
         let partyValue = settings.integer(forKey: settingKey)
         numPeople.text = "合計人数 \(partyValue)人"
+        settings.set(sum_veg, forKey: "sum_veg")
+        settings.synchronize()
     }
 }
