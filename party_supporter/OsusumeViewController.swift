@@ -10,19 +10,41 @@ import Foundation
 import UIKit
 class OsusumeViewController: UIViewController ,
 UITableViewDataSource, UITableViewDelegate{
+    
+    //outlet
+    @IBOutlet weak var OsusumeOutlet: UIStackView!
+    
+    @IBOutlet var OsusumeItemsOutlets: [UIButton]!
+    
+    
+    
+    //Action
+    @IBAction func OsusumeActions(_ sender: UIButton) {
+        OsusumeItemsOutlets.forEach { (button) in
+            button.isHidden = !button.isHidden
+        }
+    }
+    
+    @IBAction func OsusumeitemsActions(_ sender: UIButton) {
+    }
+    
+    
+    
     @IBOutlet var table:UITableView!
     // section毎の画像配列
     let imgArray: NSArray = [
         "img0","img1",
         "img2","img3",
         "img4","img5",
-        "img6","img7"]
+        "img6","img7",
+        "img8","img9"]
     
     let label2Array: NSArray = [
-        "2013/8/23/16:04","2013/8/23/16:15",
-        "2013/8/23/16:47","2013/8/23/17:10",
-        "2013/8/23/1715:","2013/8/23/17:21",
-        "2013/8/23/17:33","2013/8/23/17:41"]
+        "牛ロース\n胡椒を豪快に振りかけてペッパーステーキにするのがおすすめです","豚トロ\nマグロのトロのように脂身が多くて美味しい豚トロ",
+        "牛カルビ\nバーベキューの食材としても人気の高い牛カルビ","鶏もも肉\n鶏もも肉には脂肪が多く、コクがあっておいしいですよね",
+        "ソーセージ\n食べやすくて、美味しいソーセージ","牛ハラミ\nカルビやロースに比べて安いうえに、上質でヘルシーな味わいが楽しめます",
+        "豚ロース\nこちらも牛ロースと同様、ステーキにしていただきましょう！","ハンバーグ\n焼くのには鉄板が必要ですが、大人から子供まで美味しくいただけます。",
+        "豚バラ\n焼きそばの具材にするのがおすすめです！","サイコロステーキ\n一口サイズで食べやすいサイコロステーキ。切らずにそのまま串にさせるのがいいですね！"]
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -54,6 +76,7 @@ UITableViewDataSource, UITableViewDelegate{
         
         // Tag番号 ３ で UILabel インスタンスの生成
         let label2 = cell.viewWithTag(3) as! UILabel
+        label2.numberOfLines = 5;
         label2.text = String(describing: label2Array[indexPath.row])
         
         return cell
