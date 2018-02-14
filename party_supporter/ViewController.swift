@@ -38,6 +38,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var sumGram: UILabel!
     
+    @IBOutlet weak var sumVeg: UILabel!
+    
     let settings = UserDefaults.standard
     /*女性の人数の変数Girls_numberを作成 :担当　大迫*/
     var Girls_number : Int = 0;
@@ -45,6 +47,7 @@ class ViewController: UIViewController {
     /*控えめの変数*/
     var hikaeme = 0
     var sum :Int = 0
+    var sum_veg :Int = 0
    
     @IBAction func plusButton1(_ sender: AnyObject) {
         /*+ボタンが押された時Girls_numberに+1をしてラベルnumGirlsに人数を表示する　:　担当　大迫*/
@@ -115,7 +118,12 @@ class ViewController: UIViewController {
         //記憶されている値を代入
         let partyValue = settings.integer(forKey: settingKey)
         sum = (partyValue * 300)-(hikaeme * 50)+(Hungry * 100)-(Girls_number * 100)
+        sum_veg = sum / 2
+        settings.set(sum_veg, forKey: "sum_veg")
+        settings.set(sum, forKey: "sum")
+        settings.synchronize()
         sumGram.text = ("\(sum)g")
+        sumVeg.text = ("野菜の量:\(sum_veg)g")
     }
 
     
@@ -151,5 +159,8 @@ class ViewController: UIViewController {
         //記憶されている値を代入
         let partyValue = settings.integer(forKey: settingKey)
         numPeople.text = "合計人数 \(partyValue)人"
+        settings.set(sum_veg, forKey: "sum_veg")
+        settings.set(sum, forKey: "sum")
+        settings.synchronize()
     }
 }

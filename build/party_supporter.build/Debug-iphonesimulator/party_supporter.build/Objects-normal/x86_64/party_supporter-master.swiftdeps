@@ -1,8 +1,0 @@
-version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
-options: "b3c2f16b19be8d79980e751add0317eb"
-build_time: [1513004750, 692568000]
-inputs:
-  "/Users/e165738/,p/,IDE/Xcode/Learn/Modeling/party_supporter/party_supporter/sumofpeopleViewController.swift": [1512047794, 0]
-  "/Users/e165738/,p/,IDE/Xcode/Learn/Modeling/party_supporter/party_supporter/ViewController.swift": [1512479762, 0]
-  "/Users/e165738/,p/,IDE/Xcode/Learn/Modeling/party_supporter/party_supporter/kumatest.swift": [1512008408, 0]
-  "/Users/e165738/,p/,IDE/Xcode/Learn/Modeling/party_supporter/party_supporter/AppDelegate.swift": [1512008680, 0]

@@ -7,33 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		126F176D9B11092700E6EC54 /* 更新履歴.txt in Resources */ = {isa = PBXBuildFile; fileRef = 126F15843DA241EEAAA467DF /* 更新履歴.txt */; };
+		3B14521C2033F92E00B9D03F /* OsusumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B14521B2033F92E00B9D03F /* OsusumeViewController.swift */; };
+		3BC63A592028A60A00129EFF /* YasaiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC63A582028A60A00129EFF /* YasaiController.swift */; };
+		3BED32B4203309DA00B25612 /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BED32B3203309DA00B25612 /* ResultController.swift */; };
 		79495AC21FD010C70016EEEE /* sumofpeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79495AC11FD010C70016EEEE /* sumofpeopleViewController.swift */; };
+		AB9182F82018EFB6004B1CE5 /* Osusume.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9182F72018EFB6004B1CE5 /* Osusume.storyboard */; };
+		AB9182FA2018F02B004B1CE5 /* Sake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9182F92018F02B004B1CE5 /* Sake.storyboard */; };
+		AB9182FC2018FA83004B1CE5 /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9182FB2018FA83004B1CE5 /* Result.storyboard */; };
+		ABA717092010727600497EFC /* Niku.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA717082010727600497EFC /* Niku.storyboard */; };
 		ABC58D571FCF9B04006908A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC58D561FCF9B04006908A3 /* AppDelegate.swift */; };
 		ABC58D591FCF9B04006908A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC58D581FCF9B04006908A3 /* ViewController.swift */; };
 		ABC58D5C1FCF9B04006908A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC58D5A1FCF9B04006908A3 /* Main.storyboard */; };
 		ABC58D5E1FCF9B04006908A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC58D5D1FCF9B04006908A3 /* Assets.xcassets */; };
-		ABC58D611FCF9B04006908A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC58D5F1FCF9B04006908A3 /* LaunchScreen.storyboard */; };
-		ABC58D6A1FCF9E0F006908A3 /* fu in Resources */ = {isa = PBXBuildFile; fileRef = ABC58D681FCF9E0F006908A3 /* fu */; };
 		ABC58D6B1FCF9E0F006908A3 /* ikki in Resources */ = {isa = PBXBuildFile; fileRef = ABC58D691FCF9E0F006908A3 /* ikki */; };
-		ABC58D6F1FCF9E19006908A3 /* Koo in Resources */ = {isa = PBXBuildFile; fileRef = ABC58D6C1FCF9E19006908A3 /* Koo */; };
 		ABC58D701FCF9E19006908A3 /* RyoMatsumoto in Resources */ = {isa = PBXBuildFile; fileRef = ABC58D6D1FCF9E19006908A3 /* RyoMatsumoto */; };
 		ABC58D711FCF9E19006908A3 /* kumatest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC58D6E1FCF9E19006908A3 /* kumatest.swift */; };
+		F450A7962022A5360012291F /* sake2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450A7952022A5360012291F /* sake2.swift */; };
+		F450A79A2022A8240012291F /* sake1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450A7992022A8240012291F /* sake1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		126F15843DA241EEAAA467DF /* 更新履歴.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "更新履歴.txt"; path = "RyoMatsumoto/更新履歴.txt"; sourceTree = "<group>"; };
+		3B14521B2033F92E00B9D03F /* OsusumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OsusumeViewController.swift; sourceTree = "<group>"; };
+		3BC63A582028A60A00129EFF /* YasaiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YasaiController.swift; sourceTree = "<group>"; };
+		3BED32B3203309DA00B25612 /* ResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
 		79495AC11FD010C70016EEEE /* sumofpeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sumofpeopleViewController.swift; sourceTree = "<group>"; };
+		AB9182F72018EFB6004B1CE5 /* Osusume.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Osusume.storyboard; sourceTree = "<group>"; };
+		AB9182F92018F02B004B1CE5 /* Sake.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sake.storyboard; sourceTree = "<group>"; };
+		AB9182FB2018FA83004B1CE5 /* Result.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
+		ABA717082010727600497EFC /* Niku.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Niku.storyboard; sourceTree = "<group>"; };
 		ABC58D531FCF9B04006908A3 /* party_supporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = party_supporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC58D561FCF9B04006908A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABC58D581FCF9B04006908A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ABC58D5B1FCF9B04006908A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABC58D5D1FCF9B04006908A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ABC58D601FCF9B04006908A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABC58D621FCF9B04006908A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABC58D681FCF9E0F006908A3 /* fu */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fu; sourceTree = "<group>"; };
 		ABC58D691FCF9E0F006908A3 /* ikki */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ikki; sourceTree = "<group>"; };
-		ABC58D6C1FCF9E19006908A3 /* Koo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Koo; sourceTree = "<group>"; };
 		ABC58D6D1FCF9E19006908A3 /* RyoMatsumoto */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RyoMatsumoto; sourceTree = "<group>"; };
 		ABC58D6E1FCF9E19006908A3 /* kumatest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kumatest.swift; sourceTree = "<group>"; };
+		F450A7952022A5360012291F /* sake2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sake2.swift; sourceTree = "<group>"; };
+		F450A7992022A8240012291F /* sake1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sake1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,18 +80,25 @@
 		ABC58D551FCF9B04006908A3 /* party_supporter */ = {
 			isa = PBXGroup;
 			children = (
-				ABC58D6C1FCF9E19006908A3 /* Koo */,
 				ABC58D6E1FCF9E19006908A3 /* kumatest.swift */,
 				ABC58D6D1FCF9E19006908A3 /* RyoMatsumoto */,
-				ABC58D681FCF9E0F006908A3 /* fu */,
 				ABC58D691FCF9E0F006908A3 /* ikki */,
 				ABC58D561FCF9B04006908A3 /* AppDelegate.swift */,
 				ABC58D581FCF9B04006908A3 /* ViewController.swift */,
+				F450A7992022A8240012291F /* sake1.swift */,
+				F450A7952022A5360012291F /* sake2.swift */,
 				ABC58D5A1FCF9B04006908A3 /* Main.storyboard */,
+				AB9182F72018EFB6004B1CE5 /* Osusume.storyboard */,
+				3B14521B2033F92E00B9D03F /* OsusumeViewController.swift */,
+				3BC63A582028A60A00129EFF /* YasaiController.swift */,
+				AB9182F92018F02B004B1CE5 /* Sake.storyboard */,
+				ABA717082010727600497EFC /* Niku.storyboard */,
+				AB9182FB2018FA83004B1CE5 /* Result.storyboard */,
+				3BED32B3203309DA00B25612 /* ResultController.swift */,
 				79495AC11FD010C70016EEEE /* sumofpeopleViewController.swift */,
 				ABC58D5D1FCF9B04006908A3 /* Assets.xcassets */,
-				ABC58D5F1FCF9B04006908A3 /* LaunchScreen.storyboard */,
 				ABC58D621FCF9B04006908A3 /* Info.plist */,
+				126F15843DA241EEAAA467DF /* 更新履歴.txt */,
 			);
 			path = party_supporter;
 			sourceTree = "<group>";
@@ -141,13 +162,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABC58D6F1FCF9E19006908A3 /* Koo in Resources */,
 				ABC58D701FCF9E19006908A3 /* RyoMatsumoto in Resources */,
-				ABC58D611FCF9B04006908A3 /* LaunchScreen.storyboard in Resources */,
-				ABC58D6A1FCF9E0F006908A3 /* fu in Resources */,
+				ABA717092010727600497EFC /* Niku.storyboard in Resources */,
+				AB9182F82018EFB6004B1CE5 /* Osusume.storyboard in Resources */,
+				AB9182FC2018FA83004B1CE5 /* Result.storyboard in Resources */,
 				ABC58D5E1FCF9B04006908A3 /* Assets.xcassets in Resources */,
 				ABC58D5C1FCF9B04006908A3 /* Main.storyboard in Resources */,
+				AB9182FA2018F02B004B1CE5 /* Sake.storyboard in Resources */,
 				ABC58D6B1FCF9E0F006908A3 /* ikki in Resources */,
+				126F176D9B11092700E6EC54 /* 更新履歴.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,8 +183,13 @@
 			files = (
 				79495AC21FD010C70016EEEE /* sumofpeopleViewController.swift in Sources */,
 				ABC58D591FCF9B04006908A3 /* ViewController.swift in Sources */,
+				F450A7962022A5360012291F /* sake2.swift in Sources */,
+				3B14521C2033F92E00B9D03F /* OsusumeViewController.swift in Sources */,
 				ABC58D711FCF9E19006908A3 /* kumatest.swift in Sources */,
+				3BED32B4203309DA00B25612 /* ResultController.swift in Sources */,
 				ABC58D571FCF9B04006908A3 /* AppDelegate.swift in Sources */,
+				3BC63A592028A60A00129EFF /* YasaiController.swift in Sources */,
+				F450A79A2022A8240012291F /* sake1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,14 +202,6 @@
 				ABC58D5B1FCF9B04006908A3 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		ABC58D5F1FCF9B04006908A3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ABC58D601FCF9B04006908A3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
