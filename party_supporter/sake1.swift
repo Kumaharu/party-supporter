@@ -44,6 +44,7 @@ class sake1: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate,UIText
         
         button.isEnabled = false // ボタン無効
         button.setTitle(" ", for: .normal) // ボタンのタイトル
+        button.backgroundColor = UIColor.clear
         
       
       
@@ -157,6 +158,7 @@ class sake1: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate,UIText
         Caution2.text = ("過度のアルコール摂取は危険なので本人に適した分量の摂取を心がけてください。")
         button.isEnabled = true // ボタン有効
         button.setTitle("詳細", for: .normal) // ボタンのタイトル
+        button.backgroundColor = UIColor.white
     }
     
     
@@ -164,7 +166,7 @@ class sake1: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate,UIText
      「クリア」ボタン
      押すと、全ての値が初期化される。
      担当：松本  */
-    @IBAction func clearMeat(_ sender: Any) {
+    @IBAction func clear(_ sender: Any) {
         Girls_number = 0
         More = 0
         Little = 0
@@ -178,6 +180,8 @@ class sake1: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate,UIText
         Caution.text = ("")
         Caution2.text = ("")
         button.setTitle(" ", for: .normal) // ボタンのタイトル
+        button.backgroundColor = UIColor.clear
+        
         
         /* // 合計人数はどうする？
          let settings = UserDefaults.standard

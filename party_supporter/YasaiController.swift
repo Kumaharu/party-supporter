@@ -30,7 +30,7 @@ class YasaiController: UIViewController {
         let settings = UserDefaults.standard
         
         let sum_veg = settings.object(forKey: "sum_veg")
-        gram_yasai.text = ("目安野菜量:\(sum_veg!)g")
+        gram_yasai.text = ("目安:\(sum_veg!)g")
         gram_now.text = ("現在野菜量:\(sum_now_gram)g")
         gram_now_kyb.text = ("束数:\(gram_kyb) * 1/4束")
         gram_now_ninzi.text = ("個数:\(gram_ninzi)")

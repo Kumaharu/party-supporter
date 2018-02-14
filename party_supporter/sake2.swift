@@ -19,15 +19,15 @@ class sake2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let settings = UserDefaults.standard
-        let a = settings.object(forKey: "wine")
-        let a2 = settings.object(forKey: "cocktail")
-        let a3 = settings.object(forKey: "sake")
+        let wine = settings.object(forKey: "wine")
+        let cocktail = settings.object(forKey: "cocktail")
+        let sake = settings.object(forKey: "sake")
         
-        label1.text = "目安のワインの本数は\(a!)本です。"
+        label1.text = "目安のワインの本数は\(wine!)本です。"
         label1_2.text = "(一人当たりの杯数 男:3.6杯 女:2.4杯)"
-        label2.text = "目安のの本数は\(a2!)本です。"
+        label2.text = "目安のの本数は\(cocktail!)本です。"
         label2_2.text = "(一人当たりウイスキーの杯数 男:3杯 女:2杯)"
-        label3.text = "目安の日本酒の本数は\(a3!)本です。"
+        label3.text = "目安の日本酒の本数は\(sake!)本です。"
         label3_2.text = "(一人当たりの杯数 男:3合 女:2合)"
         
         
