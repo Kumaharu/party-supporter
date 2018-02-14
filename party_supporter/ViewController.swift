@@ -8,7 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+
+class ViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate {
+  
+    //いしたつのを参考にしたプログラム picker
+
+  let pickerView = UIPickerView()
+  var editingTextField: UITextField!
+  
+  var pickOption : [Int] = [1,2,3,4,5,6,7,8,9,10]
+  
+  var pickOption2 : [Int] = [1,2,3,4,5,6,7,8,9,10]
+  
+  var pickOption3 : [Int] = [1,2,3,4,5,6,7,8,9,10]
+  
+  @IBOutlet weak var pickerTextField: UITextField!
+  @IBOutlet weak var pickerTextField2: UITextField!
+  @IBOutlet weak var pickerTextField3: UITextField!
+  
   //設定値を扱うキーを設定(熊)
     let settingKey = "party_value"
     override func viewDidLoad() {
@@ -19,6 +36,51 @@ class ViewController: UIViewController {
       settings.register(defaults: [settingKey:1])
       
       
+      
+      
+      
+      //pickerの始まり
+      pickerView.delegate = self
+      
+      let toolBar = UIToolbar()
+      toolBar.barStyle = UIBarStyle.default
+      toolBar.isTranslucent = true
+      toolBar.tintColor = UIColor(red: 76/255, green: 217/255, blue: 100/255, alpha: 1)
+      toolBar.sizeToFit()
+      
+      let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.done, target: self, action: #selector(ViewController.donePressed))
+      let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+      let cancelButton = UIBarButtonItem(title: "Cancel", style: UIBarButtonItemStyle.plain, target: self, action: #selector(ViewController.canclePressed))
+      
+      toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
+      toolBar.isUserInteractionEnabled = true
+      
+      
+      pickerTextField.delegate = self
+      pickerTextField.inputView = pickerView
+      pickerTextField.inputAccessoryView = toolBar
+        
+      pickerTextField2.delegate = self
+      pickerTextField2.inputView = pickerView
+      pickerTextField2.inputAccessoryView = toolBar
+      
+      pickerTextField3.delegate = self
+      pickerTextField3.inputView = pickerView
+      pickerTextField3.inputAccessoryView = toolBar
+      
+      
+      
+      
+      
+      pickerTextField.text = "女性　０人"
+      pickerTextField2.text = "がっつり　０人"
+      pickerTextField3.text = "控えめ　０人"
+      //pickerのここまで
+      
+      
+      
+      
+      
     }
     
     override func didReceiveMemoryWarning() {
@@ -26,8 +88,11 @@ class ViewController: UIViewController {
       
       
     }
+
     
     /*以下の@がついた，４つの変数と，メソッドは画面のLabelとbuttonを関連付けしたもの．（熊）*/
+  
+  
     @IBOutlet weak var numPeople: UILabel!
     
     @IBOutlet weak var numGirls: UILabel!
@@ -37,7 +102,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var numNotHungry: UILabel!
 
     @IBOutlet weak var sumGram: UILabel!
-    
+
+ 
     let settings = UserDefaults.standard
     /*女性の人数の変数Girls_numberを作成 :担当　大迫*/
     var Girls_number : Int = 0;
@@ -46,75 +112,25 @@ class ViewController: UIViewController {
     var hikaeme = 0
     var sum :Int = 0
     var sum_veg :Int = 0
-   
-    @IBAction func plusButton1(_ sender: AnyObject) {
-        /*+ボタンが押された時Girls_numberに+1をしてラベルnumGirlsに人数を表示する　:　担当　大迫*/
-        
-        //記憶されている値を代入
-        let partyValue = settings.integer(forKey: settingKey)
-        //girlsnumberが合計人数を超えないように設定
-        if(Girls_number < partyValue){
-            
-        Girls_number += 1;
-            
-        }
-        
-        numGirls.text = String(Girls_number)+"人"
-    }
-    
-    @IBAction func plusButton2(_ sender: AnyObject) {
-        let partyValue = settings.integer(forKey: settingKey)
-        if(Hungry < partyValue){
-        Hungry += 1
-        }
-            numHungry.text = ("\(Hungry)人")
-    }
-    
-    @IBAction func plusButton3(_ sender: AnyObject) {
-        //＋に関するコード（fu）
-        let partyValue = settings.integer(forKey: settingKey)
-        if(hikaeme < partyValue){
-        hikaeme += 1
-        }
-        numNotHungry.text  = "\(hikaeme)人"
-    }
-    
-    @IBAction func minusButton1(_ sender: AnyObject) {
-        /*-ボタンが押された時Girls_numberに-1をしてラベルnumGirlsに人数を表示する　:担当　大迫*/
-        Girls_number -= 1;
-        /*0以下にはならないようにGirls_numberが0以下になる時はGirls_numberを0にするようにif文を使用している*/
-        if(Girls_number >= 0){
-        numGirls.text = String(Girls_number)+"人"
-        }
-        else{
-            Girls_number = 0;
-            numGirls.text = String(Girls_number)+"人"
-        }
-        
-    }
-    
-    @IBAction func minusButton2(_ sender: AnyObject) {
-        if Hungry != 0{
-        Hungry -= 1
-        }
-        numHungry.text = ("\(Hungry)人")
-    }
-    
-    @IBAction func minusButton3(_ sender: AnyObject) {
-        //- に関するコード（fu）
-        hikaeme -= 1
-        if(hikaeme < 0){
-            hikaeme = 0
-        }
-            numNotHungry.text = "\(hikaeme)人"
-    }
-    
+  
+  
+  
+  
+  
+  
     
     @IBAction func decision1(_ sender: AnyObject) {
         //UserDefaultsを生成（熊）
         let settings = UserDefaults.standard
         //記憶されている値を代入
         let partyValue = settings.integer(forKey: settingKey)
+      
+      
+      
+      
+      
+      
+      
         sum = (partyValue * 300)-(hikaeme * 50)+(Hungry * 100)-(Girls_number * 100)
         sumGram.text = ("\(sum)g")
         sum_veg = sum / 2
@@ -156,4 +172,105 @@ class ViewController: UIViewController {
         let partyValue = settings.integer(forKey: settingKey)
         numPeople.text = "合計人数 \(partyValue)人"
     }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  //いしたつ
+  func textFieldDidBeginEditing(_ textField: UITextField) {
+    editingTextField = textField
+    pickerView.reloadAllComponents()
+  }
+  
+  func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    return 1
+  }
+  
+  func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    if editingTextField == pickerTextField {
+      return pickOption.count
+    } else if editingTextField == pickerTextField2 {
+      return pickOption2.count
+    }else if editingTextField == pickerTextField3{
+      return pickOption3.count
+    }
+    else {
+      return 0
+    }
+  }
+  
+  //pickerviewの中身を表示する
+  func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    if editingTextField == pickerTextField{
+      return "\(pickOption[row])人"
+    }else if editingTextField == pickerTextField2 {
+      return "\(pickOption2[row])人"
+    }else if editingTextField == pickerTextField3{
+      return "\(pickOption3[row])人"
+    }
+    else{
+      return nil
+    }
+  }
+  /*
+  private func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> Int? {
+    if editingTextField == pickerTextField {
+      return pickOption[row]
+    } else if editingTextField == pickerTextField2 {
+      return pickOption2[row]
+    }else{
+      return nil
+    }
+  }
+  
+  */
+  
+  
+  //中の値を入れる
+  func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    if editingTextField == pickerTextField {
+      Girls_number = pickOption[row]
+      return pickerTextField.text = "女性 "+String(pickOption[row])+"人"
+    } else if editingTextField == pickerTextField2 {
+      Hungry = pickOption2[row]
+      return pickerTextField2.text = String(pickOption2[row])+"人"
+    } else if editingTextField == pickerTextField3{
+      hikaeme = pickOption3[row]
+      return pickerTextField3.text = String(pickOption3[row])+"人"
+    }
+  }
+  
+  
+
+ 
+  
+  @objc func donePressed(sender: UIBarButtonItem) {
+    self.view.endEditing(true)
+  }
+  
+  @objc func canclePressed(sender: UIBarButtonItem) {
+    if editingTextField == pickerTextField {
+      pickerTextField.text = ""
+    } else if editingTextField == pickerTextField2 {
+      pickerTextField2.text = ""
+    }
+    self.view.endEditing(true)
+  }
+  
+  func textFieldShouldReturn(_ Text: UITextField) -> Bool {
+    Text.resignFirstResponder()
+    return true
+  }
+  
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    self.view.endEditing(true)
+  }
 }
