@@ -1,13 +1,13 @@
 //
-//  File.swift
-//  Test.swift
+//  OsusumeViewController.swift
+//  party_supporter
 //
-//  Created by 付铭昊 on 2017/11/25.
-//  Copyright © 2017年 福田　光希. All rights reserved.
+//  Created by 付铭昊 on 2018/2/14.
+//  Copyright © 2018年 Univ-ryukyu. All rights reserved.
 //
 
+import Foundation
 import UIKit
-
 class OsusumeViewController: UIViewController ,
 UITableViewDataSource, UITableViewDelegate{
     @IBOutlet var table:UITableView!
@@ -42,7 +42,7 @@ UITableViewDataSource, UITableViewDelegate{
         let cell = table.dequeueReusableCell(withIdentifier: "osusumeCell",
                                              for: indexPath)
         
-        let img = UIImage(named: imgArray[indexPath.row]　 as! String)
+        let img = UIImage(named: imgArray[indexPath.row] as! String)
         
         // Tag番号 1 で UIImageView インスタンスの生成
         let imageView = cell.viewWithTag(1) as! UIImageView
