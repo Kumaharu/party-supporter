@@ -258,13 +258,13 @@ class sake1: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate,UIText
   func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
     if editingTextField == pickerTextField4 {
       Girls_number = pickOption[row]
-      return pickerTextField4.text =  String(pickOption[row])+"人"
+      return pickerTextField4.text =  "女性 "+String(pickOption[row])+"人"
     } else if editingTextField == pickerTextField5 {
       More = pickOption2[row]
-      return pickerTextField5.text =  String(pickOption2[row])+"人"
+      return pickerTextField5.text = "多め " + String(pickOption2[row])+"人"
     } else if editingTextField == PickerTextField6{
       Little = pickOption3[row]
-      return PickerTextField6.text =  String(pickOption3[row])+"人"
+      return PickerTextField6.text =  "控えめ " + String(pickOption3[row])+"人"
     }
   }
   
