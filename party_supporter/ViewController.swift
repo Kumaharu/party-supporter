@@ -16,11 +16,11 @@ class ViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDeleg
   let pickerView = UIPickerView()
   var editingTextField: UITextField!
 
-  var pickOption : [Int] = [1,2,3,4,5,6,7,8,9,10]
+  var pickOption : [Int] = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 
-  var pickOption2 : [Int] = [1,2,3,4,5,6,7,8,9,10]
+  var pickOption2 : [Int] = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 
-  var pickOption3 : [Int] = [1,2,3,4,5,6,7,8,9,10]
+  var pickOption3 : [Int] = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 
   @IBOutlet weak var pickerTextField: UITextField!
   @IBOutlet weak var pickerTextField2: UITextField!
@@ -144,9 +144,9 @@ class ViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDeleg
         Hungry = 0
         hikaeme = 0
         sum = 0
-        numGirls.text = "\(Girls_number)人"
-        numHungry.text = "\(Hungry)人"
-        numNotHungry.text = "\(hikaeme)人"
+      pickerTextField.text = "女性　\(Girls_number)人"
+      pickerTextField2.text = "がっつり　\(Hungry)人"
+      pickerTextField3.text = "控えめ　\(hikaeme)人"
         sumGram.text = "\(sum)g"
         
        /* // 合計人数はどうする？
@@ -240,10 +240,10 @@ class ViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDeleg
       return pickerTextField.text = "女性 "+String(pickOption[row])+"人"
     } else if editingTextField == pickerTextField2 {
       Hungry = pickOption2[row]
-      return pickerTextField2.text = String(pickOption2[row])+"人"
+      return pickerTextField2.text = "がっつり "+String(pickOption2[row])+"人"
     } else if editingTextField == pickerTextField3{
       hikaeme = pickOption3[row]
-      return pickerTextField3.text = String(pickOption3[row])+"人"
+      return pickerTextField3.text = "控えめ " + String(pickOption3[row]) + "人"
     }
   }
 

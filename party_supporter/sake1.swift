@@ -16,11 +16,11 @@ class sake1: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate,UIText
   let pickerView = UIPickerView()
   var editingTextField: UITextField!
   
-  var pickOption : [Int] = [1,2,3,4,5,6,7,8,9,10]
+  var pickOption : [Int] = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
   
-  var pickOption2 : [Int] = [1,2,3,4,5,6,7,8,9,10]
+  var pickOption2 : [Int] = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
   
-  var pickOption3 : [Int] = [1,2,3,4,5,6,7,8,9,10]
+  var pickOption3 : [Int] = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
   
   //picker
   @IBOutlet weak var pickerTextField4: UITextField!
@@ -171,9 +171,10 @@ class sake1: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate,UIText
         More = 0
         Little = 0
         sum = 0
-        numGirls.text = "\(Girls_number)人"
-        numMore.text = "\(More)人"
-        numLittle.text = "\(Little)人"
+      
+      pickerTextField4.text = "女性　\(Girls_number)人"
+      pickerTextField5.text = "がっつり　\(More)人"
+      PickerTextField6.text = "控えめ　\(Little)人"
         sumGram.text = "\(sum)g"
         Criterion.text = ("")
         Criterion2.text = ("")
@@ -257,13 +258,13 @@ class sake1: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate,UIText
   func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
     if editingTextField == pickerTextField4 {
       Girls_number = pickOption[row]
-      return pickerTextField4.text = String(pickOption[row])+"人"
+      return pickerTextField4.text =  String(pickOption[row])+"人"
     } else if editingTextField == pickerTextField5 {
       More = pickOption2[row]
-      return pickerTextField5.text = String(pickOption2[row])+"人"
+      return pickerTextField5.text =  String(pickOption2[row])+"人"
     } else if editingTextField == PickerTextField6{
       Little = pickOption3[row]
-      return PickerTextField6.text = String(pickOption3[row])+"人"
+      return PickerTextField6.text =  String(pickOption3[row])+"人"
     }
   }
   
