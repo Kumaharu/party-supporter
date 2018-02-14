@@ -28,14 +28,6 @@
             </objects>
             <point key="canvasLocation" x="-578" y="582"/>
         </scene>
-        <!--Result-->
-        <scene sceneID="DYZ-lN-BIy">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Result" id="8IF-g6-4I9" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ee-eC-4Mv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1180" y="-469"/>
-        </scene>
         <!--Sumofpeople View Controller-->
         <scene sceneID="mKw-hT-nnO">
             <objects>
@@ -88,11 +80,7 @@
                         <viewLayoutGuide key="safeArea" id="q3R-YC-czb"/>
                     </view>
                     <navigationItem key="navigationItem" id="x9S-1Z-2h8">
-                        <barButtonItem key="rightBarButtonItem" title="計算する" id="ctV-fI-3XW">
-                            <connections>
-                                <segue destination="8IF-g6-4I9" kind="show" id="QNR-57-S56"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="計算する" id="ctV-fI-3XW"/>
                     </navigationItem>
                     <connections>
                         <outlet property="partyPicker" destination="DKs-8D-DdP" id="2we-qe-DT7"/>
