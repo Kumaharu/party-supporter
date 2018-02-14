@@ -10,7 +10,7 @@ import UIKit
 
 class sumofpeopleViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate{
   //UIPickerViewに表示するデータをArrayで作成（熊）
-  let sumofpeopleArray : [Int] = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+  let sumofpeopleArray : [Int] = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
   //設定値を覚えるキーを設定（熊）
   let settingKey = "party_value"
 
