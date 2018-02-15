@@ -28,14 +28,6 @@
             </objects>
             <point key="canvasLocation" x="-578" y="582"/>
         </scene>
-        <!--Result-->
-        <scene sceneID="DYZ-lN-BIy">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Result" id="8IF-g6-4I9" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ee-eC-4Mv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1180" y="-469"/>
-        </scene>
         <!--Sumofpeople View Controller-->
         <scene sceneID="mKw-hT-nnO">
             <objects>
@@ -44,31 +36,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTQ-S8-QDO">
-                                <rect key="frame" x="508" y="802" width="153" height="114"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-4" translatesAutoresizingMaskIntoConstraints="NO" id="Y6w-F9-3Yo">
+                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="決定"/>
+                                <color key="backgroundColor" red="0.98924657179999997" green="1" blue="0.99170217549999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.98924657179999997" green="1" blue="0.99170217549999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTQ-S8-QDO">
+                                <rect key="frame" x="308" y="828" width="153" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.39168027799484384" blue="0.22505560786730716" alpha="0.85329555457746475" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="決定">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="decisionButtonAction:" destination="8ig-Yt-jX5" eventType="touchUpInside" id="TuE-Od-s1E"/>
                                     <segue destination="yfH-cb-DsT" kind="show" id="Rtz-aY-u7X"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKs-8D-DdP">
-                                <rect key="frame" x="224" y="512" width="320" height="216"/>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DKs-8D-DdP">
+                                <rect key="frame" x="224" y="436" width="320" height="216"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合計人数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7f-JR-DIX">
-                                <rect key="frame" x="284" y="344" width="200" height="100"/>
-                                <color key="backgroundColor" red="0.80641177789999996" green="1" blue="0.97132327780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="合計人数 は？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7f-JR-DIX">
+                                <rect key="frame" x="284" y="364" width="200" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Mnh-Hg-qZJ"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="tjp-1r-YR8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="パーティー　サポーター" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkO-3D-mQJ">
+                                <rect key="frame" x="87" y="190" width="595" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.853063103952584" blue="0.47221083113547763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="e7f-JR-DIX" firstAttribute="top" secondItem="q3R-YC-czb" secondAttribute="top" constant="280" id="7YT-dn-9g4"/>
                             <constraint firstItem="DKs-8D-DdP" firstAttribute="top" secondItem="e7f-JR-DIX" secondAttribute="bottom" constant="68" id="SJ0-S9-SFN"/>
@@ -77,20 +92,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q3R-YC-czb"/>
                     </view>
-                    <navigationItem key="navigationItem" id="x9S-1Z-2h8">
-                        <barButtonItem key="rightBarButtonItem" title="計算する" id="ctV-fI-3XW">
-                            <connections>
-                                <segue destination="8IF-g6-4I9" kind="show" id="QNR-57-S56"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="x9S-1Z-2h8"/>
                     <connections>
                         <outlet property="partyPicker" destination="DKs-8D-DdP" id="2we-qe-DT7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7B-gn-KzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="582"/>
+            <point key="canvasLocation" x="244.53125" y="581.8359375"/>
         </scene>
         <!--Niku-->
         <scene sceneID="Ziy-Ld-zzA">
@@ -142,4 +151,7 @@
             <point key="canvasLocation" x="1210" y="506"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image-4" width="6000" height="4000"/>
+    </resources>
 </document>
